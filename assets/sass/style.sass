@@ -1,14 +1,176 @@
 @import "lib/type"
 @import "lib/vars"
 
-
-
 *
     margin: 0
     padding: 0
-    
+/* Nav/Menu */
+.men
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+.redes
+    display: flex
+    flex-direction: column
+    align-items: center
+    .icon 
+        margin-bottom: 21px
+        .facebook
+            fill:#000
+            &:hover
+                fill: #999
+        .twitter
+            fill: #000
+            &:hover
+                fill: #999
+        .insta
+            margin: 0 25px
+            fill: #000
+            &:hover
+                fill: #999
+#button
+    background-color: black
+    border-color: black
+    width: 90px
+    height: 43px
+    margin-bottom: 44px
+    &:hover
+        background-color: white
+        color: black
+.logo 
+    margin-left: 50px
+    height: 246px
+nav 
+    display: flex
+    align-items: flex-end
+    .menu
+        margin-left: 750px
+        display: flex
+        flex-direction: row
+        align-items: center
+        list-style: none
+.item-1
+    display: flex
+    align-items: center
+    &:hover
+        text-decoration: underline
+    #zoom 
+        display: flex
+        margin-bottom: 20px
+.item-2
+    margin-left: 107px
+    display: flex
+    align-items: center
+    &:hover
+        text-decoration: underline
+    #contra 
+        display: flex
+        margin-bottom: 14px 
+.item-3
+    margin-left: 107px
+    display: flex
+    align-items: center
+    &:hover
+        text-decoration: underline
+    #plano
+        display: flex
+        margin-bottom: 20px
+/* Grid */
+.grid 
+    display: grid
+    padding: 30px 50px 0
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 100vh
+    .portada
+        background-color: red
+        grid-column: 1/13
+        height: 743px
+    .entradilla
+        background-color: blue
+        grid-column: 1/13
+        height: 200px
+        margin-top: 65px
+        margin-bottom: 60px
+    .articulo-largo
+        background-color: green
+        grid-column: 1/13
+        height: 434px
+        margin-top: 60px
+        margin-bottom: 60px
+    .articulo-corto
+        background-color: pink
+        grid-column: 1/13
+        height: 404px
+        margin-top: 60px
+        margin-bottom: 60px
+    .articulos
+        background-color: grey
+        grid-column: 1/13
+        margin-top: 60px
+        height: 462px
+    .formulario
+        background-color: black
+        grid-column: 1/13
+        margin-top: 180px
+        height: 412px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        .textform
+            display: flex
+            flex-direction: column
+            text-align: center
+        .form
+            display: flex
+            flex-direction: column
+            margin-top: 113px
+            .input_text
+                height: 26px
+            .for-name
+                margin-bottom: 20px
+            .for-mail
+                margin-bottom: 20px
+                margin-top: 20px
 
+    .red
+        grid-column: 1/13
+        text-align: center
+        margin-top: 61px
+        .reds
+            margin-top: 15px
+            
+            .twitter
+                fill: black 
+                &:hover
+                    fill: #666
+            .insta
+                fill: black
+                margin: 0 43px 
+                &:hover
+                    fill: #666
+            .face
+                fill: black
+                &:hover
+                    fill: #666
+        
 
-
+#btnIII
+    background-color: black
+    border-color: white
+    width: 90px
+    height: 43px
+    margin-bottom: 44px
+    margin-top: 30px
+    margin-left: 150px
+    &:hover
+        background-color: white
+        color: black
+.footer
+    height: 44px
+    width: 1518px
+    background-color: black
+    display: flex
+    justify-content: center
+    margin-top: 70px
 
 

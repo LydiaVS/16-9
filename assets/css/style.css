@@ -1,6 +1,447 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
+h1 {
+  font-size: 144px;
+}
+
+h2 {
+  font-size: 92px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+}
+
+#button {
+  font-size: 14px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+}
+
+#btnIII {
+  font-size: 14px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+}
+
+#btnII {
+  font-size: 36px;
+}
+
+.menu {
+  font-size: 13px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#publi {
+  font-size: 13px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+}
+
+#autor {
+  font-size: 12px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+}
+
+#formulario {
+  font-size: 11px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+#formul2 {
+  font-size: 36px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 17px;
+  margin-top: 113px;
+}
+
+#footer {
+  font-size: 10px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+}
+
+/* Tipografia Lato */
 * {
   margin: 0;
   padding: 0;
+}
+
+/* Nav/Menu */
+.men {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.redes .icon {
+  margin-bottom: 21px;
+}
+
+.redes .icon .facebook {
+  fill: #000;
+}
+
+.redes .icon .facebook:hover {
+  fill: #999;
+}
+
+.redes .icon .twitter {
+  fill: #000;
+}
+
+.redes .icon .twitter:hover {
+  fill: #999;
+}
+
+.redes .icon .insta {
+  margin: 0 25px;
+  fill: #000;
+}
+
+.redes .icon .insta:hover {
+  fill: #999;
+}
+
+#button {
+  background-color: black;
+  border-color: black;
+  width: 90px;
+  height: 43px;
+  margin-bottom: 44px;
+}
+
+#button:hover {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  margin-left: 50px;
+  height: 246px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav .menu {
+  margin-left: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.item-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-1:hover {
+  text-decoration: underline;
+}
+
+.item-1 #zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item-2 {
+  margin-left: 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-2:hover {
+  text-decoration: underline;
+}
+
+.item-2 #contra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.item-3 {
+  margin-left: 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-3:hover {
+  text-decoration: underline;
+}
+
+.item-3 #plano {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.grid {
+  display: -ms-grid;
+  display: grid;
+  padding: 30px 50px 0;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+}
+
+.grid .portada {
+  background-color: red;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  height: 743px;
+}
+
+.grid .entradilla {
+  background-color: blue;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  height: 200px;
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+
+.grid .articulo-largo {
+  background-color: green;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  height: 434px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.grid .articulo-corto {
+  background-color: pink;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  height: 404px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.grid .articulos {
+  background-color: grey;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  margin-top: 60px;
+  height: 462px;
+}
+
+.grid .formulario {
+  background-color: black;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  margin-top: 180px;
+  height: 412px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.grid .formulario .textform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.grid .formulario .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 113px;
+}
+
+.grid .formulario .form .input_text {
+  height: 26px;
+}
+
+.grid .formulario .form .for-name {
+  margin-bottom: 20px;
+}
+
+.grid .formulario .form .for-mail {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.grid .red {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  text-align: center;
+  margin-top: 61px;
+}
+
+.grid .red .reds {
+  margin-top: 15px;
+}
+
+.grid .red .reds .twitter {
+  fill: black;
+}
+
+.grid .red .reds .twitter:hover {
+  fill: #666;
+}
+
+.grid .red .reds .insta {
+  fill: black;
+  margin: 0 43px;
+}
+
+.grid .red .reds .insta:hover {
+  fill: #666;
+}
+
+.grid .red .reds .face {
+  fill: black;
+}
+
+.grid .red .reds .face:hover {
+  fill: #666;
+}
+
+#btnIII {
+  background-color: black;
+  border-color: white;
+  width: 90px;
+  height: 43px;
+  margin-bottom: 44px;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+#btnIII:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  height: 44px;
+  width: 1518px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
 }
 /*# sourceMappingURL=style.css.map */
