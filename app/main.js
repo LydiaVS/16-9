@@ -15,7 +15,7 @@ window.onload = () => {
             data.forEach(articulo=>{
                 if (articulo.id == 1){
                     portada.innerHTML +=`
-                    <div class="user">
+                    <div class="articulo" id="${articulo.id}">
                     <img  src="${articulo.img}" alt=""> 
                     <a id="btnII" href="#">${articulo.seccion}</a>
                     <h1>${articulo.titulo}</h1>
@@ -23,15 +23,15 @@ window.onload = () => {
                     
                 `;
                 entradilla.innerHTML +=`
-                    <div class="entradilla-texto">
+                    <div class="entradilla-texto" id="${articulo.id}">
                     <p id="autor">${articulo.nombres}</p>
                     <p id="fecha">${articulo.fecha}</p>
                     </div>
                     <h4 >${articulo.destacado}</h4>`;
                 articulos.innerHTML +=`
-                    <div class="art-uno">
+                    <div class="art-uno" id="${articulo.id}">
                     <img src="${articulo.img}" alt="">
-                    <h5 class="user">${articulo.titulo}</h5>
+                    <h5 class="articulo">${articulo.titulo}</h5>
                     <p id="autor">${articulo.nombres}</p>
                     <p id="fecha">${articulo.fecha}</p>
                     </div>
@@ -41,7 +41,7 @@ window.onload = () => {
                         corto.innerHTML +=`
                         <img src="${articulo.img}" alt="">
                         <div class="corto-texto">
-                        <h2 class="user">${articulo.titulo}</h2>
+                        <h2 class="articulo" id="${articulo.id}">${articulo.titulo}</h2>
                         <p id="autor">${articulo.nombres}</p>
                         <p id="fecha">${articulo.fecha}</p>
                         <h4>${articulo.destacado}</h4></div>
@@ -49,7 +49,7 @@ window.onload = () => {
                         articulos.innerHTML +=`
                         <div class="art-dos">
                         <img src="${articulo.img}" alt="">
-                        <h5 class="user">${articulo.titulo}</h5>
+                        <h5 class="articulo" id="${articulo.id}">${articulo.titulo}</h5>
                         <p id="autor">${articulo.nombres}</p>
                         <p id="fecha">${articulo.fecha}</p>
                         </div>
@@ -59,29 +59,27 @@ window.onload = () => {
                         largo.innerHTML +=`
                         <img src="${articulo.img}" alt=""> 
                         <div id="largo-text">
-                        <h2 class="user">${articulo.titulo}</h2>
+                        <h2 class="articulo" id="${articulo.id}">${articulo.titulo}</h2>
                         <p id="autor">${articulo.nombres}</p>
                         <p id="fecha">${articulo.fecha}</p>
                         <h4>${articulo.destacado}</h4> </div>`;
                         articulos.innerHTML +=`
                         <div class="art-tres">
                         <img src="${articulo.img}" alt="">
-                        <h5 class="user">${articulo.titulo}</h5>
+                        <h5 class="articulo" id="${articulo.id}">${articulo.titulo}</h5>
                         <p id="autor">${articulo.nombres}</p>
                         <p id="fecha">${articulo.fecha}</p>
                         </div>
                         </div>`;
 
-                    }
-                     
-                    
+                    }                    
                 }
             });
         })
 
         .then(() =>{
-            let users = document.querySelectorAll(".user");
-            users.forEach((articulo) =>{
+            let noticia = document.querySelectorAll(".articulo");
+            noticia.forEach((articulo) =>{
                 articulo.addEventListener("click", mostrarDetalle,true)
                 })
             });

@@ -58,6 +58,7 @@ p {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
+  line-height: 30px;
 }
 
 #button {
@@ -100,6 +101,7 @@ p {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
+  line-height: 15px;
 }
 
 #fecha {
@@ -139,175 +141,6 @@ p {
 a {
   text-decoration: none;
   color: #000;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Nav/Menu */
-.men {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.redes .icon {
-  margin-bottom: 21px;
-}
-
-.redes .icon .facebook {
-  fill: #000;
-}
-
-.redes .icon .facebook:hover {
-  fill: #999;
-}
-
-.redes .icon .twitter {
-  fill: #000;
-}
-
-.redes .icon .twitter:hover {
-  fill: #999;
-}
-
-.redes .icon .insta {
-  margin: 0 25px;
-  fill: #000;
-}
-
-.redes .icon .insta:hover {
-  fill: #999;
-}
-
-#button {
-  background-color: black;
-  border-color: black;
-  width: 90px;
-  height: 43px;
-  margin-bottom: 44px;
-}
-
-#button:hover {
-  background-color: white;
-  color: black;
-}
-
-.logo {
-  margin-left: 50px;
-  height: 246px;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-nav .menu {
-  margin-left: 750px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-}
-
-nav .menu a {
-  text-align: center;
-}
-
-.item-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.item-1:hover {
-  text-decoration: underline;
-}
-
-.item-1 #zoom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.item-2 {
-  margin-left: 107px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.item-2:hover {
-  text-decoration: underline;
-}
-
-.item-2 #contra {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 14px;
-}
-
-.item-3 {
-  margin-left: 107px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.item-3:hover {
-  text-decoration: underline;
-}
-
-.item-3 #plano {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
 }
 
 /* Grid */
@@ -610,6 +443,175 @@ nav .menu a {
   fill: #666;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav/Menu */
+.men {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.redes .icon {
+  margin-bottom: 21px;
+}
+
+.redes .icon .facebook {
+  fill: #000;
+}
+
+.redes .icon .facebook:hover {
+  fill: #999;
+}
+
+.redes .icon .twitter {
+  fill: #000;
+}
+
+.redes .icon .twitter:hover {
+  fill: #999;
+}
+
+.redes .icon .insta {
+  margin: 0 25px;
+  fill: #000;
+}
+
+.redes .icon .insta:hover {
+  fill: #999;
+}
+
+#button {
+  background-color: black;
+  border-color: black;
+  width: 90px;
+  height: 43px;
+  margin-bottom: 44px;
+}
+
+#button:hover {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  margin-left: 50px;
+  height: 246px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav .menu {
+  margin-left: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav .menu a {
+  text-align: center;
+}
+
+.item-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-1:hover {
+  text-decoration: underline;
+}
+
+.item-1 #zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item-2 {
+  margin-left: 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-2:hover {
+  text-decoration: underline;
+}
+
+.item-2 #contra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.item-3 {
+  margin-left: 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-3:hover {
+  text-decoration: underline;
+}
+
+.item-3 #plano {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
 #btnIII {
   background-color: black;
   border-color: white;
@@ -625,6 +627,7 @@ nav .menu a {
   color: black;
 }
 
+/* Footer*/
 .footer {
   height: 44px;
   width: 1518px;
@@ -636,5 +639,54 @@ nav .menu a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 70px;
+}
+
+.grid .entrada {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.grid .entrada img {
+  height: 100%;
+}
+
+.grid .entrada .text {
+  margin-left: 20px;
+}
+
+.grid .entrada .text h1 {
+  width: 497px;
+}
+
+.grid .entrada .text #btnII {
+  margin-top: 30px;
+}
+
+.grid .entrada .text #autor {
+  margin-top: 30px;
+}
+
+.grid .entrada .text #fecha {
+  margin-top: 10px;
+}
+
+.grid .article {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  height: 100%;
+  margin-top: 90px;
+}
+
+.grid .article-corto {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-column: 2/9;
 }
 /*# sourceMappingURL=style.css.map */

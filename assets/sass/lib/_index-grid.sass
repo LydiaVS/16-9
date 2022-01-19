@@ -1,0 +1,157 @@
+/* Grid */
+.grid
+    display: grid
+    padding: 30px 50px 0
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 100vh
+    .portada
+        grid-column: 1/13
+        height: 743px
+        position: relative
+        #portada-text
+        img
+            position: absolute
+            height: 743px
+            width: 100%
+        #btnII
+            position: absolute
+            color: white
+            margin-left: 143px
+            margin-top: 57px
+        h1
+            position: absolute
+            color: white
+            margin-left: 143px
+            margin-top: 120px
+            width: 499px
+    .entradilla
+        grid-column: 1/13
+        height: 200px
+        margin-top: 65px
+        margin-bottom: 60px
+        display: flex
+        flex-direction: row
+        #fecha
+            margin-top: 10px
+        .entradilla-texto
+            display: flex
+            flex-direction: column
+            width: 2887px
+
+    .articulo-largo
+        grid-column: 1/13
+        height: 434px
+        margin-top: 60px
+        margin-bottom: 60px
+        display: flex
+        #largo-text
+            display: flex
+            flex-direction: column
+            margin-left: 20px
+        img
+            grid-column: 1/13
+            height: 434px
+        #autor
+            margin-top: 4px
+        #fecha 
+            margin-top: 10px
+        h4
+            margin-top: 31px
+        h2
+            width: 550px
+    .articulo-corto
+        grid-column: 1/13
+        height: 404px
+        margin-top: 60px
+        margin-bottom: 60px
+        display: flex
+        .corto-texto
+            display: flex
+            flex-direction: column
+            margin-left: 20px
+            h2
+                width: 364px
+
+            #autor
+                margin-top: 29px
+            #fecha
+                margin-top: 10px
+            h4
+                position: absolute
+                margin-top: 269px
+                margin-left: -432px
+                width: 920px
+        img
+            height: 250px
+            position: relative
+        .publi
+            height: 452px
+            margin-left: 200px
+            border: 13px solid #eaeaea
+            cursor: pointer
+    .articulos
+        grid-column: 1/13
+        margin-top: 60px
+        height: 462px
+        display: flex
+        justify-content: space-between
+        #autor
+            margin-top: 10px
+        #fecha
+            margin-top: 5px
+        img
+            height: 200px
+            width: 400px
+        .art-uno
+            h5
+                width: 353px
+        .art-dos
+            h5
+                width: 353px
+        .art-tres
+            h5
+                width: 454px
+    .formulario
+        background-color: black
+        grid-column: 1/13
+        margin-top: 180px
+        height: 412px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        .textform
+            display: flex
+            flex-direction: column
+            text-align: center
+        .form
+            display: flex
+            flex-direction: column
+            margin-top: 113px
+            .input_text
+                height: 26px
+            .for-name
+                margin-bottom: 20px
+            .for-mail
+                margin-bottom: 20px
+                margin-top: 20px
+
+    .red
+        grid-column: 1/13
+        text-align: center
+        margin-top: 61px
+        .reds
+            margin-top: 15px
+
+            .twitter
+                fill: black
+                &:hover
+                    fill: #666
+            .insta
+                fill: black
+                margin: 0 43px
+                &:hover
+                    fill: #666
+            .face
+                fill: black
+                &:hover
+                    fill: #666
