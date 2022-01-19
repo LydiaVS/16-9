@@ -1,5 +1,6 @@
-@import "lib/type"
 @import "lib/vars"
+@import "lib/type"
+
 
 *
     margin: 0
@@ -13,7 +14,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    .icon 
+    .icon
         margin-bottom: 21px
         .facebook
             fill:#000
@@ -37,10 +38,10 @@
     &:hover
         background-color: white
         color: black
-.logo 
+.logo
     margin-left: 50px
     height: 246px
-nav 
+nav
     display: flex
     align-items: flex-end
     .menu
@@ -49,12 +50,14 @@ nav
         flex-direction: row
         align-items: center
         list-style: none
+        a
+            text-align: center
 .item-1
     display: flex
     align-items: center
     &:hover
         text-decoration: underline
-    #zoom 
+    #zoom
         display: flex
         margin-bottom: 20px
 .item-2
@@ -63,9 +66,9 @@ nav
     align-items: center
     &:hover
         text-decoration: underline
-    #contra 
+    #contra
         display: flex
-        margin-bottom: 14px 
+        margin-bottom: 14px
 .item-3
     margin-left: 107px
     display: flex
@@ -76,38 +79,99 @@ nav
         display: flex
         margin-bottom: 20px
 /* Grid */
-.grid 
+.grid
     display: grid
     padding: 30px 50px 0
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: 100vh
     .portada
-        background-color: red
         grid-column: 1/13
         height: 743px
+        position: relative
+        #portada-text
+        img
+            position: absolute
+            height: 743px
+            width: 100%
+        #btnII
+            position: absolute
+            color: white
+            margin-left: 143px
+            margin-top: 57px
+        h1
+            position: absolute
+            color: white
+            margin-left: 143px
+            margin-top: 120px
+            width: 499px
     .entradilla
-        background-color: blue
         grid-column: 1/13
         height: 200px
         margin-top: 65px
         margin-bottom: 60px
+        display: flex
+        flex-direction: row
+        #fecha
+            margin-top: 10px
+        .entradilla-texto
+            display: flex
+            flex-direction: column
+            width: 2887px
+
     .articulo-largo
-        background-color: green
         grid-column: 1/13
         height: 434px
         margin-top: 60px
         margin-bottom: 60px
+        display: flex
+        #largo-text
+            display: flex
+            flex-direction: column
+            margin-left: 20px
+        img
+            grid-column: 1/13
+            height: 434px
+        #autor
+            margin-top: 4px
+        #fecha 
+            margin-top: 10px
+        h4
+            margin-top: 31px
+        h2
+            width: 550px
     .articulo-corto
-        background-color: pink
         grid-column: 1/13
         height: 404px
         margin-top: 60px
         margin-bottom: 60px
+        display: flex
+        .corto-texto
+            display: flex
+            flex-direction: column
+            margin-left: 20px
+            h2
+                width: 364px
+
+            #autor
+                margin-top: 29px
+            #fecha
+                margin-top: 10px
+            h4
+                position: absolute
+                margin-top: 269px
+                margin-left: -432px
+                width: 920px
+        img
+            height: 250px
+            position: relative
     .articulos
         background-color: grey
         grid-column: 1/13
         margin-top: 60px
         height: 462px
+        display: flex
+        img
+            height: 200px
     .formulario
         background-color: black
         grid-column: 1/13
@@ -138,21 +202,21 @@ nav
         margin-top: 61px
         .reds
             margin-top: 15px
-            
+
             .twitter
-                fill: black 
+                fill: black
                 &:hover
                     fill: #666
             .insta
                 fill: black
-                margin: 0 43px 
+                margin: 0 43px
                 &:hover
                     fill: #666
             .face
                 fill: black
                 &:hover
                     fill: #666
-        
+
 
 #btnIII
     background-color: black
