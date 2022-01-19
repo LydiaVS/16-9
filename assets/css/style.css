@@ -92,13 +92,6 @@ p {
   text-decoration: none;
 }
 
-#publi {
-  font-size: 13px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-}
-
 #autor {
   font-size: 12px;
   font-family: 'Lato';
@@ -478,8 +471,13 @@ nav .menu a {
   position: relative;
 }
 
+.grid .articulo-corto .publi {
+  height: 452px;
+  margin-left: 200px;
+  border: 13px solid #eaeaea;
+}
+
 .grid .articulos {
-  background-color: grey;
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -488,10 +486,34 @@ nav .menu a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid .articulos #autor {
+  margin-top: 10px;
+}
+
+.grid .articulos #fecha {
+  margin-top: 5px;
 }
 
 .grid .articulos img {
   height: 200px;
+  width: 400px;
+}
+
+.grid .articulos .art-uno h5 {
+  width: 353px;
+}
+
+.grid .articulos .art-dos h5 {
+  width: 353px;
+}
+
+.grid .articulos .art-tres h5 {
+  width: 454px;
 }
 
 .grid .formulario {

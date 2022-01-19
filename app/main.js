@@ -59,7 +59,8 @@ fetch(`assets/data/articulos.json`)
                 <a href="assets/data/articulo.html"><h2>${articulo.titulo}</h2></a>
                 <p id="autor">${articulo.nombres}</p>
                 <p id="fecha">${articulo.fecha}</p>
-                <h4>${articulo.destacado}</h4></div>`
+                <h4>${articulo.destacado}</h4></div>
+                <img class="publi" src="assets/images/Cinesa.jpg" alt="">`
             } 
         });
     })

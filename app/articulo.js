@@ -9,7 +9,7 @@ fetch(`../assets/data/articulos.json`)
     .then(res => res.json())
     .then(data=>{
         let user = data[Number(param)]
-        let detalle = document.querySelector("#grid");
+        let detalle = document.querySelector(".entrada");
         detalle.innerHTML += `<img src="${user.img}">`
         
     });
