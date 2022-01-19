@@ -1,3 +1,4 @@
+window.onload = () => {
 let obtenerParam = (url) => {
     let urlParam = String(url.match(/\?+.+/));
     urlParam = urlParam.replace("?id=", "");
@@ -5,11 +6,13 @@ let obtenerParam = (url) => {
 }
 let param = obtenerParam(document.URL);
 console.log(param);
-fetch(`../assets/data/articulos.json`)
+fetch(`../data/articulos.json`)
     .then(res => res.json())
     .then(data=>{
-        let user = data[Number(param)]
+        let user = data[Number(param)-1]
         let detalle = document.querySelector(".entrada");
-        detalle.innerHTML += `<img src="${user.img}">`
+        if(user.template == "largo"){
+            detalle.innerHTML += `<img src="${user.img}">`}
         
     });
+}
