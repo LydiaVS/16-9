@@ -55,7 +55,15 @@ window.onload = () => {
                 </div>
                 <div class="article">
                 <h4>${articulo.destacado}</h4>
-                <p>${articulo.text[0].persona1}</p>
+                <h3>${articulo.text[0].persona1}</h3>
+                <p>${articulo.text[0].text1}</p>
+                <img src="../../${articulo.text[0].img1}" alt="">
+                <h3>${articulo.text[0].persona2}</h3>
+                <p>${articulo.text[0].text2}</p>
+                <img src="../../${articulo.text[0].img2}" alt="">
+                <h3>${articulo.text[0].persona1}</h3>
+                <p>${articulo.text[0].text1}</p>
+
             </div>`
             }
             });

@@ -32,6 +32,9 @@ h3 {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
 }
 
 h4 {
@@ -127,6 +130,7 @@ p {
   color: white;
   margin-bottom: 17px;
   margin-top: 113px;
+  line-height: 50px;
 }
 
 #footer {
@@ -764,6 +768,12 @@ nav .menu a {
   grid-column: 1/9;
   height: 100%;
   margin-top: 90px;
+}
+
+.grid-article .article img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 500px;
 }
 
 .grid-article .article h4 {
