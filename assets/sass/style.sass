@@ -97,12 +97,16 @@ nav
     justify-content: center
     margin-top: 70px
 
-.grid 
+.grid-article
+    display: grid
+    padding: 30px 50px 0
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 100vh
+    align-items: center
     .entrada 
         grid-column: 1/13
         height: 420px
         display: flex
-        margin-top: 60px
         img
             height: 100%
         .text
@@ -115,12 +119,51 @@ nav
                 margin-top: 30px
             #fecha
                 margin-top: 10px
+    .entrada-largo
+        grid-column: 1/13
+        height: 420px
+        display: flex
+        img
+            height: 100%
+        h1
+            font-size: 105px
+            width: 700px
+        .text
+            margin-left: 20px
+            #btnII
+                margin-top: 30px
+            #autor
+                margin-top: 16px
+            #fecha
+                margin-top: 10px
+    .entrada-corto
+        grid-column: 1/13
+        height: 420px
+        display: flex
+        margin-top: 60px
+        img
+            height: 100%
+        .text
+            margin-left: 20px
+            h1
+                width: 563px
+            #btnII
+                margin-top: 30px
+            #autor
+                margin-top: 30px
+            #fecha
+                margin-top: 10px
 
     .article
         grid-column: 1/9
         height: 100%
         margin-top: 90px
+        h4
+            margin-bottom: 50px
     .article-corto
         grid-column: 2/9
+        h4
+            margin-bottom: 50px
+
         
 

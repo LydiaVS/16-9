@@ -14,10 +14,10 @@ window.onload = () => {
         .then(res => res.json())
         .then(data=> {
             let articulo = data[Number(param)-1]
-            let detalle = document.querySelector(".grid");
+            let detalle = document.querySelector(".grid-article");
             if(articulo.template == "largo"){
                 detalle.innerHTML += `
-                <div class="entrada">
+                <div class="entrada-largo">
                     <img  src="../../${articulo.img}" alt="">
                     <div class="text">
                         <h1>${articulo.titulo}</h1>
@@ -31,7 +31,7 @@ window.onload = () => {
                 </div>`
             }else if (articulo.template =="corto"){
                 detalle.innerHTML += `
-                <div class="entrada">
+                <div class="entrada-corto">
                     <img  src="../../${articulo.img}" alt="">
                     <div class="text">
                         <h1>${articulo.titulo}</h1>
@@ -43,6 +43,20 @@ window.onload = () => {
                     <h4>${articulo.destacado}</h4>
                     <p>${articulo.text}</p>
                 </div>`                
+            }else if (articulo.template =="debate"){
+                detalle.innerHTML+= `
+                <div class="entrada">
+                    <img  src="../../${articulo.img}" alt="">
+                    <div class="text">
+                        <h1>${articulo.titulo}</h1>
+                        <a id="btnII" href="#">${articulo.seccion}</a>
+                        <p id="autor">${articulo.nombres}</p>
+                        <p id="fecha">${articulo.fecha}</p></div>
+                </div>
+                <div class="article">
+                <h4>${articulo.destacado}</h4>
+                <p>${articulo.text[0].persona1}</p>
+            </div>`
             }
             });
         

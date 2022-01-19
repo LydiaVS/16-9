@@ -641,7 +641,89 @@ nav .menu a {
   margin-top: 70px;
 }
 
-.grid .entrada {
+.grid-article {
+  display: -ms-grid;
+  display: grid;
+  padding: 30px 50px 0;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-article .entrada {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-article .entrada img {
+  height: 100%;
+}
+
+.grid-article .entrada .text {
+  margin-left: 20px;
+}
+
+.grid-article .entrada .text h1 {
+  width: 497px;
+}
+
+.grid-article .entrada .text #btnII {
+  margin-top: 30px;
+}
+
+.grid-article .entrada .text #autor {
+  margin-top: 30px;
+}
+
+.grid-article .entrada .text #fecha {
+  margin-top: 10px;
+}
+
+.grid-article .entrada-largo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-article .entrada-largo img {
+  height: 100%;
+}
+
+.grid-article .entrada-largo h1 {
+  font-size: 105px;
+  width: 700px;
+}
+
+.grid-article .entrada-largo .text {
+  margin-left: 20px;
+}
+
+.grid-article .entrada-largo .text #btnII {
+  margin-top: 30px;
+}
+
+.grid-article .entrada-largo .text #autor {
+  margin-top: 16px;
+}
+
+.grid-article .entrada-largo .text #fecha {
+  margin-top: 10px;
+}
+
+.grid-article .entrada-corto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
@@ -652,31 +734,31 @@ nav .menu a {
   margin-top: 60px;
 }
 
-.grid .entrada img {
+.grid-article .entrada-corto img {
   height: 100%;
 }
 
-.grid .entrada .text {
+.grid-article .entrada-corto .text {
   margin-left: 20px;
 }
 
-.grid .entrada .text h1 {
-  width: 497px;
+.grid-article .entrada-corto .text h1 {
+  width: 563px;
 }
 
-.grid .entrada .text #btnII {
+.grid-article .entrada-corto .text #btnII {
   margin-top: 30px;
 }
 
-.grid .entrada .text #autor {
+.grid-article .entrada-corto .text #autor {
   margin-top: 30px;
 }
 
-.grid .entrada .text #fecha {
+.grid-article .entrada-corto .text #fecha {
   margin-top: 10px;
 }
 
-.grid .article {
+.grid-article .article {
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/9;
@@ -684,9 +766,17 @@ nav .menu a {
   margin-top: 90px;
 }
 
-.grid .article-corto {
+.grid-article .article h4 {
+  margin-bottom: 50px;
+}
+
+.grid-article .article-corto {
   -ms-grid-column: 2;
   -ms-grid-column-span: 7;
   grid-column: 2/9;
+}
+
+.grid-article .article-corto h4 {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
